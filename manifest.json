@@ -1,21 +1,14 @@
 {
-  "name": "Win The Day Tabs",
-  "short_name": "WinTabs",
+  "name": "Win The Day",
+  "short_name": "WinTheDay",
+  "description": "Daily lead measures tracker",
   "start_url": "./index.html",
-  "scope": ".",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#d19f2a",
+  "background_color": "#fdf9f0",
+  "theme_color": "#b8860b",
   "icons": [
-    {
-      "src": "icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "icon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
+    { "src": "icon-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512x512.png", "sizes": "512x512", "type": "image/png" }
   ]
 }

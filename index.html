@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Win The Day Tabs</title>
-    <link rel="manifest" href="manifest.json" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#b8860b">
+  <title>Win The Day</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192x192.png">
+  <link rel="apple-touch-icon" href="icon-512x512.png">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app-shell">
     <header>
-      <h1>Win The Day</h1>
-      <nav id="category-nav">
-        <button data-category="personal">Personal</button>
-        <button data-category="professional">Professional</button>
-        <button data-category="home">Home</button>
-        <button data-category="kids">Kids</button>
-      </nav>
+      <div class="header-top">
+        <h1 class="logo">Win <span>The Day</span></h1>
+        <div id="score-badge"></div>
+      </div>
+      <nav id="cat-nav"></nav>
     </header>
-    <main id="app"></main>
-    <footer>
-      <p>&copy; <span id="year"></span></p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    <div id="sub-nav"></div>
+    <main id="main"></main>
+    <footer><span id="version"></span></footer>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
 </html>
